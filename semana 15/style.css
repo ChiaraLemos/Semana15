@@ -1,0 +1,55 @@
+
+ /* Estilos para la barra de navegación */
+ nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex; /* Alinear los elementos en una sola línea */
+    align-items: center; /* Alinear los elementos verticalmente */
+}
+/* Estilos para la barra de búsqueda */
+#busqueda {
+    display: flex;
+    align-items: center; /* Alinear elementos de búsqueda verticalmente */
+    margin-left: auto; /* Empujar la barra de búsqueda hacia la izquierda */
+}
+.search-bar input[type="search"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px; /* Espacio entre el campo de búsqueda y el botón */
+}
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-bar button:hover {
+    background-color: #777;
+}
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style: none; /* Eliminar puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinear los elementos horizontalmente */
+}
+nav ul li {
+    margin-left: 20px; /* Espacio entre los elementos de la lista */
+}
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave para el color */
+}
+nav ul li a:hover {
+    color: #ffcc00; /* Cambiar color al pasar el mouse */
+}
+.columnas {
+    column-count: 2; /* Divide el contenido en 2 columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+}
