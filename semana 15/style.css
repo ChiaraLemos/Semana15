@@ -1,55 +1,104 @@
-
- /* Estilos para la barra de navegación */
- nav {
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex; /* Alinear los elementos en una sola línea */
-    align-items: center; /* Alinear los elementos verticalmente */
-}
-/* Estilos para la barra de búsqueda */
-#busqueda {
+/* Asegurarte de que el body esté configurado */
+body {
     display: flex;
-    align-items: center; /* Alinear elementos de búsqueda verticalmente */
-    margin-left: auto; /* Empujar la barra de búsqueda hacia la izquierda */
-}
-.search-bar input[type="search"] {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px; /* Espacio entre el campo de búsqueda y el botón */
-}
-.search-bar button {
-    padding: 5px 10px;
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.search-bar button:hover {
-    background-color: #777;
-}
-/* Estilos para la lista de navegación */
-nav ul {
-    list-style: none; /* Eliminar puntos de la lista */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Alinear los elementos horizontalmente */
-}
-nav ul li {
-    margin-left: 20px; /* Espacio entre los elementos de la lista */
-}
-nav ul li a {
-    color: white;
-    text-decoration: none; /* Eliminar subrayado */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Fuente general */
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #f8f9fa;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
     font-weight: bold;
-    transition: color 0.3s; /* Transición suave para el color */
-}
-nav ul li a:hover {
-    color: #ffcc00; /* Cambiar color al pasar el mouse */
-}
-.columnas {
-    column-count: 2; /* Divide el contenido en 2 columnas */
-    column-gap: 20px; /* Espacio entre las columnas */
-}
+  }
+  
+  /* Contenedor de todo el contenido */
+  .container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Carrusel */
+  .carousel {
+    text-align: center; /* Centra el texto */
+    background-color: #f7f7f7; /* Fondo claro */
+    padding: 10px 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado debajo del carrusel */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%; /* Ancho completo */
+  }
+  
+  /* Texto del carrusel */
+  .carousel p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    margin: 0; /* Elimina márgenes */
+  }
+  
+  /* Contenedor para las opciones y columnas (flex horizontal) */
+  .bottom-content {
+    display: flex; /* Organiza las opciones y las columnas en fila */
+    gap: 20px; /* Espacio entre las opciones y las columnas */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+  }
+  
+  /* Opciones (botones) */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start; /* Alineación vertical */
+  }
+  
+  .options button {
+    padding: 10px;
+    background-color: #dbdfe2; /* Color de fondo claro */
+    border: 1px solid #2b2c2e; /* Bordes en un color más vivo */
+    color: #050606; /* Texto del botón */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
+    cursor: pointer;
+    text-align: left;
+    width: 150px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efecto de hover en los botones */
+  .options button:hover {
+    background-color: #9ea2a7;
+    color: white;
+  }
+  
+  /* Contenido de las columnas */
+  .content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    padding: 0 20px; /* Margen interno */
+    box-sizing: border-box; /* Incluye padding en el cálculo de ancho */
+    display: flex; /* Uso de flexbox para las columnas */
+  }
+  
+  /* Contenedor de cada columna */
+  .column {
+    background-color: #b8bcc1; /* Fondo claro para cada columna */
+    flex: 1; /* Cada columna toma espacio equitativo */
+    padding: 20px; /* Espaciado dentro de cada columna */
+    margin: 0 10px; /* Espacio entre columnas */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Texto en las columnas */
+  .column p {
+    line-height: 1.8; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+  }
+  
